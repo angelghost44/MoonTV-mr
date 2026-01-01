@@ -5,6 +5,21 @@
     "tvapi": {"api": "https://tvapi.87cc.com/api.php/provide/vod/","name": "87CC"},
     "ys6": {"api": "https://ys6.cc/api.php/provide/vod/","name": "影视6"},
     "cjys": {"api": "https://cjys.cc/api.php/provide/vod/","name": "采集影视"},
-    "okzy": {"api": "https://okzy.tv/api.php/provide/vod/","name": "OK资源"}
+    "okzy": {"api": "https://okzy.tv/api.php/provide/vod/","name": "OK资源"},
+    "bdzy": {"api": "https://api.apibdzy.com/api.php/provide/vod/","name": "百度云资源"},
+    "qilin": {"api": "https://www.qilinzyz.com/api.php/provide/vod/","name": "麒麟资源"},
+    "fanqie": {"api": "http://api.fqzy.cc/api.php/provide/vod/","name": "番茄资源"},
+    "wujin": {"api": "https://api.wujinapi.com/api.php/provide/vod/","name": "无尽资源"},
+    "kuaibozy": {"api": "http://www.kuaibozy.com/api.php/provide/vod/from/kbm3u8/at/xml/","name": "快播资源"},
+    "yylsp": {"api": "https://yylsp.com/api.php/provide/vod/","name": "一元联盟"},
+    "tiankongy": {"api": "http://api.tiankongys.com/api.php/provide/vod/","name": "天空影视"},
+    "ykzy": {"api": "https://api.ykzy.tv/api.php/provide/vod/","name": "玉魂资源"},
+    "ikun": {"api": "https://ikunzyapi.com/api.php/provide/vod/","name": "爱昆资源"},
+    "suonizy": {"api": "https://suoniapi.com/api.php/provide/vod/","name": "索尼资源"},
+    "zhaozy": {"api": "https://zhaoziyuan.com/api.php/provide/vod/","name": "兆源资源"},
+    "caiji": {"api": "https://caiji.55ys.cc/api.php/provide/vod/","name": "采集55"},
+    "yangguang": {"api": "http://api.yangsunapi.com/api.php/provide/vod/","name": "阳光资源"},
+    "feifeiz": {"api": "http://feifeicaiji.com/api.php/provide/vod/","name": "非飞资源"},
+    "ttzy": {"api": "http://api.ttzy1.top/api.php/provide/vod/","name": "TT资源"}
   }
 }
