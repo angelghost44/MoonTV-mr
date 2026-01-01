@@ -1,45 +1,10 @@
 {
-  "cache_time": 7200,
+  "cache_time": 1800,
   "api_site": {
-    "dyttzy": {
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/",
-      "name": "电影天堂"
-    },
-    "mytv": {
-      "api": "https://cihuanyingshi.com/api.php/provide/vod/",
-      "name": "磁花影视"
-    },
-    "maotai": {
-      "api": "https://pt.4maotai.com/api.php/provide/vod/",
-      "name": "茅台影视"
-    },
-    "jiasu": {
-      "api": "https://cj.lziapi.com/api.php/provide/vod/",
-      "name": "极速影视"
-    },
-    "90hd": {
-      "api": "https://90hd.top/api.php/provide/vod/?ac=provide",
-      "name": "90HD"
-    },
-    "sigu": {
-      "api": "https://sigu.cc/api.php/provide/vod/",
-      "name": "思古影视"
-    },
-    "movieapp": {
-      "api": "https://app.movie/api.php/provide/vod/",
-      "name": "手机影院"
-    },
-    "yxy57": {
-      "api": "https://s2.yxy57.icu/api.php/provide/vod/",
-      "name": "玉羞园"
-    },
-    "hc34567": {
-      "api": "http://www.hc34567.com/api.php/provide/vod/",
-      "name": "影视森林"
-    },
-    "hyule11": {
-      "api": "https://hyule11.com/api.php/provide/vod/",
-      "name": "HylTV"
-    }
+    "vodsou": {"api": "https://vodsou.com/api.php/provide/vod/","name": "VOD搜"},
+    "tvapi": {"api": "https://tvapi.87cc.com/api.php/provide/vod/","name": "87CC"},
+    "ys6": {"api": "https://ys6.cc/api.php/provide/vod/","name": "影视6"},
+    "cjys": {"api": "https://cjys.cc/api.php/provide/vod/","name": "采集影视"},
+    "okzy": {"api": "https://okzy.tv/api.php/provide/vod/","name": "OK资源"}
   }
 }
