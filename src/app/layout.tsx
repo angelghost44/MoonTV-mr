@@ -8,15 +8,15 @@ import 'sweetalert2/dist/sweetalert2.min.css';
 
 import { getConfig } from '@/lib/config';
 
+import ConditionalNav from '../components/ConditionalNav';
+import GlobalDownloadManager from '../components/GlobalDownloadManager';
 import { GlobalErrorIndicator } from '../components/GlobalErrorIndicator';
-import MobileBottomNav from '../components/MobileBottomNav';
-import MobileHeader from '../components/MobileHeader';
 import { NavigationLoadingIndicator } from '../components/NavigationLoadingIndicator';
 import { NavigationLoadingProvider } from '../components/NavigationLoadingProvider';
+import ServiceWorkerRegistration from '../components/ServiceWorkerRegistration';
 import { SiteProvider } from '../components/SiteProvider';
 import SubscriptionAutoUpdate from '../components/SubscriptionAutoUpdate';
 import { ThemeProvider } from '../components/ThemeProvider';
-import TopNav from '../components/TopNav';
 import UserOnlineUpdate from '../components/UserOnlineUpdate';
 
 export const runtime = 'edge';
@@ -117,16 +117,17 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ServiceWorkerRegistration />
           <NavigationLoadingProvider>
             <SiteProvider siteName={siteName} announcement={announcement}>
               <NavigationLoadingIndicator />
               <UserOnlineUpdate />
               
-              {/* 移动端头部 - 固定在根布局，避免页面切换时重新渲染 */}
-              <MobileHeader showBackButton={false} />
+              {/* 条件导航栏 - 根据路径自动判断是否显示 */}
+              <ConditionalNav />
               
-              {/* 桌面端顶部导航栏 - 固定在根布局，避免页面切换时重新渲染 */}
-              <TopNav />
+              {/* 全局下载管理器 - 只渲染一次，被所有导航栏共享 */}
+              <GlobalDownloadManager />
               
               {/* 页面内容 */}
               <div className='relative w-full'>
@@ -138,11 +139,6 @@ export default async function RootLayout({
                 >
                   {children}
                 </main>
-              </div>
-              
-              {/* 移动端底部导航 - 固定在根布局，避免页面切换时重新渲染 */}
-              <div className='md:hidden'>
-                <MobileBottomNav />
               </div>
               
               <GlobalErrorIndicator />
